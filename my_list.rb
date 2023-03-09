@@ -3,6 +3,9 @@ class MyList
   include MyEnumerable
 
   attr_accessor :list
-# Muller : Create initialize method
-# Teke : create each method
+# Create initialize method 
+  def initialize(*list)
+    @list = list
   end
+# Teke : create each method
+end
