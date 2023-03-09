@@ -5,5 +5,10 @@ module MyEnumerable
         true
       end
     # Teke : create any? method
-    # Muller : create filter method
-    end
+    #Create filter method
+      def filter(&block)
+        result = []
+        each { |element| result << element if block.call(element) }
+        result
+      end
+end
