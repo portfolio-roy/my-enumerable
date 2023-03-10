@@ -4,7 +4,11 @@ module MyEnumerable
         each { |element| return false unless block.call(element) }
         true
       end
-    # Teke : create any? method
+    # create any method
+     def any?(&block)
+    each { |element| return true if block.call(element) }
+    false
+  end
     #Create filter method
       def filter(&block)
         result = []
