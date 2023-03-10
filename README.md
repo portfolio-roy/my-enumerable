@@ -94,7 +94,7 @@ Install inters for this project with:
 To run the project, execute the following command:
 
 ```sh
-  irb -r ./my_enumerable.rb
+  irb -r ./my_list.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
