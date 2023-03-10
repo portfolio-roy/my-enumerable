@@ -7,5 +7,12 @@ class MyList
   def initialize(*list)
     @list = list
   end
-# Teke : create each method
+# create each method
+  def each(&block)
+    index = 0
+    while index < @list.length
+      block.call(@list[index])
+      index += 1
+    end
+  end
 end
